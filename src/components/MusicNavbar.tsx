@@ -7,7 +7,6 @@ import {
   Row,
   Col,
   Form,
-  InputGroup,
 } from "react-bootstrap"
 import Novità from "./Novità"
 import { Broadcast, Grid, House, Search } from "react-bootstrap-icons"
