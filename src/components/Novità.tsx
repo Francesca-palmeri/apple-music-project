@@ -1,5 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap"
 import NuoviEpisodi from "./NuoviEpidosi"
+import NuoveUscite from "./NuoveUscite"
 
 const Novità = function () {
   return (
@@ -41,6 +42,7 @@ const Novità = function () {
           </Col>
         </Row>
         <NuoviEpisodi />
+        <NuoveUscite />
       </Container>
     </>
   )
