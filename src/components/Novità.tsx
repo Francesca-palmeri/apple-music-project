@@ -7,9 +7,9 @@ const Novità = function () {
   return (
     <>
       <Container fluid className="px-5">
-        <Row className="text-white">
-          <h2 className="mt-5">Novità</h2>
-          <Col xs={6}>
+        <h2 className=" h1 text-white mt-5">Novità</h2>
+        <Row className=" flex-nowrap text-white">
+          <Col xs={12} lg={6}>
             <div>
               <p className=" text-white-50 mb-0">NUOVA STAZIONE RADIO</p>
               <p className=" lh-sm">
@@ -17,29 +17,27 @@ const Novità = function () {
               </p>
             </div>
           </Col>
-          <Col xs={6}>
+          <Col xs={12} lg={6}>
             <div>
               <p className=" text-white-50 mb-0">NUOVA STAZIONE RADIO</p>
               <p className=" lh-sm">Ecco la nuova casa della musica latina</p>
             </div>
           </Col>
         </Row>
-        <Row>
-          <Col>
+        <Row className=" flex-nowrap">
+          <Col xs={12} lg={6}>
             <img
               src="images/1a.png"
               alt="Nuova stazione radio"
               className=" rounded-3 w-100"
             />
           </Col>
-          <Col>
-            <div>
-              <img
-                src="images/1b.png"
-                alt="Nuova stazione radio"
-                className=" rounded-3 w-100"
-              />
-            </div>
+          <Col xs={12} lg={6}>
+            <img
+              src="images/1b.png"
+              alt="Nuova stazione radio"
+              className=" rounded-3 w-100"
+            />
           </Col>
         </Row>
         <NuoviEpisodi />

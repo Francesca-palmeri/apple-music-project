@@ -33,7 +33,7 @@ const NuoveUscite = function () {
         <h2 className="text-white pb-1">Nuove uscite</h2>
         {songs.slice(0, 12).map((song) => (
           <Col xs={4} lg={2} key={song.id} className=" p-0">
-            <Card className=" btn btn bg-transparent text-white border-0">
+            <Card className="me-2 bg-transparent text-white border-0">
               <Card.Img
                 variant="top"
                 src={song.album.cover_big}
