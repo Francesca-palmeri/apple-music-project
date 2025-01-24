@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { Songs } from "../types/Songs"
 import { Card, Col, Container, Row } from "react-bootstrap"
+import OtherContents from "./OtherContents"
 
 const NuoveUscite = function () {
   const [songs, setSongs] = useState<Songs[]>([])
@@ -30,12 +31,12 @@ const NuoveUscite = function () {
     <Container>
       <Row>
         <h2 className="text-white pb-1">Nuove uscite</h2>
-        {songs.map((song) => (
-          <Col xs={4} lg={2} key={song.id} className=" bg-transparent">
-            <Card className=" bg-transparent text-white border-0">
+        {songs.slice(0, 12).map((song) => (
+          <Col xs={4} lg={2} key={song.id} className=" p-0">
+            <Card className=" btn btn bg-transparent text-white border-0">
               <Card.Img
                 variant="top"
-                src={song.album.cover}
+                src={song.album.cover_big}
                 alt={song.title}
                 className=" w-100"
               />
@@ -50,6 +51,9 @@ const NuoveUscite = function () {
             </Card>
           </Col>
         ))}
+      </Row>
+      <Row>
+        <OtherContents />
       </Row>
     </Container>
   )

@@ -1,14 +1,14 @@
 import "bootstrap/dist/css/bootstrap.min.css"
 import "./App.css"
 import MusicNavbar from "./components/MusicNavbar"
-import MusicFooter from "./components/MusicFooter"
+
+import { MusicPlayer } from "react-bootstrap-icons"
 
 function App() {
   return (
     <>
       <MusicNavbar />
-
-      <MusicFooter />
+      <MusicPlayer />
     </>
   )
 }

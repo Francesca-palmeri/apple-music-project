@@ -20,7 +20,3 @@ export enum ArtistType {
     Artist = "artist",
 }
 
-export enum TitleVersion {
-    Empty = "",
-    Instrumental = "(Instrumental)",
-}

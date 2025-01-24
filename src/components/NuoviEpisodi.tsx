@@ -1,12 +1,17 @@
 import { Col, Row } from "react-bootstrap"
-import { ExplicitFill } from "react-bootstrap-icons"
+import { ChevronRight, ExplicitFill } from "react-bootstrap-icons"
 
 const NuoviEpisodi = function () {
   return (
     <>
       <Row className=" text-white">
-        <div className="mt-3 pb-1">
-          <h2>Nuovi episodi radio</h2>
+        <div className="d-flex  mt-3 pb-1">
+          <h2>
+            Nuovi episodi radio{" "}
+            <span className="">
+              <ChevronRight />
+            </span>
+          </h2>
         </div>
 
         <Col xs={4} lg={2}>

@@ -1,13 +1,14 @@
 import { Col, Container, Row } from "react-bootstrap"
-import NuoviEpisodi from "./NuoviEpidosi"
+import NuoviEpisodi from "./NuoviEpisodi"
 import NuoveUscite from "./NuoveUscite"
+import MusicFooter from "./MusicFooter"
 
 const Novità = function () {
   return (
     <>
-      <Container fluid>
+      <Container fluid className="px-5">
         <Row className="text-white">
-          <h2>Novità</h2>
+          <h2 className="mt-5">Novità</h2>
           <Col xs={6}>
             <div>
               <p className=" text-white-50 mb-0">NUOVA STAZIONE RADIO</p>
@@ -44,6 +45,7 @@ const Novità = function () {
         <NuoviEpisodi />
         <NuoveUscite />
       </Container>
+      <MusicFooter />
     </>
   )
 }

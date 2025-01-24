@@ -1,4 +1,6 @@
-import { Album, Artist,  TitleVersion } from "./Songs";
+import { Album} from './Album';
+import { Artist } from './Artist';
+
 
 export interface Datum {
     id:                      number;
@@ -20,4 +22,8 @@ export interface Datum {
 }
 export enum DatumType {
     Track = "track",
+}
+export enum TitleVersion {
+    Empty = "",
+    Instrumental = "(Instrumental)",
 }

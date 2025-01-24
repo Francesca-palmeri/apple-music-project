@@ -2,8 +2,12 @@ import { Container, Row, Col } from "react-bootstrap"
 
 const MusicFooter = function () {
   return (
-    <footer className="bg-dark text-white py-3">
-      <Container>
+    <footer>
+      <Container
+        fluid
+        className="text-white py-3 "
+        style={{ backgroundColor: "#323232" }}
+      >
         <Row className="flex-column">
           <Col className="text-center ">
             <a href="#" className="text-white mx-2">

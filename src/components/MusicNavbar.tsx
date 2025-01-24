@@ -19,7 +19,7 @@ const MusicNavbar = function () {
 
   return (
     <>
-      <Navbar bg="dark" variant="dark" expand="lg">
+      <Navbar className="GrayBackground" variant="dark" expand="lg">
         <Container fluid>
           <Navbar.Toggle
             aria-controls="offcanvas-navbar"
@@ -54,7 +54,7 @@ const MusicNavbar = function () {
 
       <Container fluid>
         <Row>
-          <Col lg={2} className="d-none d-lg-block bg-dark sidebar">
+          <Col lg={2} className="d-none d-lg-block GrayBackground sidebar">
             <Nav className="flex-column p-3 text-white">
               <Form className="d-flex">
                 <Form.Control
@@ -80,7 +80,7 @@ const MusicNavbar = function () {
               </Nav.Link>
             </Nav>
           </Col>
-          <Col lg={10} className="content">
+          <Col lg={10} className="px-0">
             <Novità />
           </Col>
         </Row>
