@@ -7,9 +7,10 @@ import {
   Row,
   Col,
   Form,
+  InputGroup,
 } from "react-bootstrap"
 import Novità from "./Novità"
-import { Broadcast, Grid, House } from "react-bootstrap-icons"
+import { Broadcast, Grid, House, Search } from "react-bootstrap-icons"
 
 const MusicNavbar = function () {
   const [show, setShow] = useState(false)
@@ -60,8 +61,9 @@ const MusicNavbar = function () {
                 <Form.Control
                   type="search"
                   placeholder="Cerca"
-                  className="me-2 bg-dark text-white"
+                  className=" searchInput me-2 bg-dark text-white"
                 />
+                <Search className="Search-icon " />
               </Form>
               <Nav.Link href="#" className="text-white">
                 <House className=" text-danger me-2 align-baseline p-0 " />

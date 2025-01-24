@@ -6,3 +6,14 @@ body {
 .GrayBackground {
   background-color: #252526;
 }
+
+.searchInput {
+  position: relative;
+}
+
+.Search-icon {
+  position: absolute;
+  top: 83px;
+  left: 40px;
+  color: #dc3545;
+}
