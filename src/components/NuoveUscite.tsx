@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { Songs } from "../types/Songs"
 import { Card, Col, Container, Row } from "react-bootstrap"
 import OtherContents from "./OtherContents"
+import { ChevronRight } from "react-bootstrap-icons"
 
 const NuoveUscite = function () {
   const [songs, setSongs] = useState<Songs[]>([])
@@ -30,7 +31,12 @@ const NuoveUscite = function () {
   return (
     <Container>
       <Row>
-        <h2 className="text-white pb-1">Nuove uscite</h2>
+        <h2 className="text-white pb-1">
+          Nuove uscite
+          <span>
+            <ChevronRight style={{ width: "20px", height: "20px" }} />
+          </span>
+        </h2>
         {songs.slice(0, 12).map((song) => (
           <Col xs={4} lg={2} key={song.id} className=" p-0">
             <Card className="me-2 bg-transparent text-white border-0">

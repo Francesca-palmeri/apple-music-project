@@ -7,9 +7,9 @@ const NuoviEpisodi = function () {
       <Row className=" text-white">
         <div className="d-flex  mt-3 pb-1">
           <h2>
-            Nuovi episodi radio{" "}
-            <span className="">
-              <ChevronRight />
+            Nuovi episodi radio
+            <span>
+              <ChevronRight style={{ width: "20px", height: "20px" }} />
             </span>
           </h2>
         </div>
